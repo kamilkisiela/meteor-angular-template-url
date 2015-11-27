@@ -11,15 +11,13 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.2.1');
-  api.use('ecmascript');
-  api.use('mys:version-compare');
+  api.versionsFrom('METEOR@1.0');
+  api.use('mys:version-compare@1.0.0');
   api.addFiles('angular-template-url.js');
   api.export('angularTemplateUrl');
 });
 
 Package.onTest(function(api) {
-  api.use('ecmascript');
   api.use('tinytest');
   api.use('mys:angular-template-url');
   api.addFiles('angular-template-url-tests.js');

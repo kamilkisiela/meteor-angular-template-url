@@ -12,7 +12,7 @@ meteor add mys:angular-template-url
 Type package name and template url.
 
 ```javascript
-const tpl = angularTemplateUrl.fix('wieldo:autoformly', 'client/index.ng.html')
+const tpl = angularTemplateUrl('wieldo:autoformly', 'client/index.ng.html')
 
 console.log('tpl:', tpl);
 
